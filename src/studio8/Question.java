@@ -33,8 +33,12 @@ public class Question {
 	
 	public static void main(String[] args) {
 		Question q = new Question("What number studio is this?", "8", 2);
+		Question t = new Question("Does it say gullible on the ceiling?", "yes", 10);
 		q.displayPrompt();
+		t.displayPrompt();		
 		System.out.println(q.checkAnswer("hi"));
 		System.out.println(q.checkAnswer("8"));
+		System.out.println(t.checkAnswer("yes"));
+		
 	}
 }
